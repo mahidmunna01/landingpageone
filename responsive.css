@@ -1,0 +1,99 @@
+@media screen and (max-width:780px) {
+ body{
+  background-color: tomato;
+ }
+  .header ul a {
+  font-size: 12px;
+  color: white;
+ }
+ nav li{
+  margin: 05px;
+ }
+ .header img{
+  width: 50%;
+ }
+ .hero-section{
+  flex-direction: column-reverse;
+  margin: 15% auto;
+}
+.hero-section h1{
+  line-height: none;
+  padding-right:0;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+.hero-section img{
+  width: 90%;
+  display: block;
+  margin: 0px auto;
+}
+.hero-section p{
+  padding-right:0%;
+  text-align: center;
+  color: black;
+  
+}
+.left input{
+  width: 100%;
+  padding: 4% 5%;
+}
+.button{
+  margin-left: 0px;
+  position: relative;
+  top: 23px;
+  padding: 3% 5%;
+  width: 100%;
+  background-color: black;
+}
+.hero-two{
+  display: none;
+}
+
+.hero-3{
+  flex-direction: column;
+  text-align: center;
+  height: 400px;
+  background-color: black;
+}
+.hero-3 h2,p{
+  padding-right:0;
+  padding-top: 30px;
+}
+
+.hero-3 .right input{
+  padding: 6% 5%;
+  width: 100%;
+  border: 1px solid #dddd;
+}
+.hero-3 input::placeholder{
+  font-size: 12px;
+}
+
+.hero-3 .button{
+  padding: 6% 13%;
+  margin: 0px;
+  top: 10px;
+}
+
+.footer{
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 12% 04%;
+  flex-direction: column;
+  background-color: ;
+}
+.one img{
+  width: 70%;
+}
+.contact img{
+  width: 100%;
+  margin-top: 10px;
+}
+.four a{
+  display: inline-block;
+}
+
+}

@@ -1,0 +1,343 @@
+:root{
+  --VeryDarkBlue: hsl(243, 87%, 12%);
+  --DesaturatedBlue: hsl(238, 22%, 44%);
+  --BrightBlue: hsl(224, 93%, 58%);
+  --ModerateCyan: hsl(170, 45%, 43%);
+  --LightGrayishBlue: hsl(240, 75%, 98%);
+  --LightGra: hsl(0, 0%, 75%);
+  --font-family: "Raleway", sans-serif;
+  --font-family2: "Open Sans", sans-serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--font-family);
+  width: 100%;
+  background-color: blueviolet;
+}
+body p{
+  font-size: 16px;
+}
+
+/* Header-Part */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4%;
+}
+ul{
+  text-align: center;
+}
+nav li{
+ display: inline-block;
+ margin: 10px;
+}
+ul li a{
+ text-decoration: none;
+ color:white;
+ font-size: 20px;
+ font-family: var(--font-family2);
+}
+
+ul li a:hover{
+ color: black;
+}
+
+/* First-Section */
+
+.hero-section{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20% 4%;
+}
+.left{
+  flex-basis: 60%;
+}
+.right{
+  flex-basis: 40%;
+}
+.right img{
+  width: 100%;
+}
+.hero-section h1{
+  line-height: 1.4em;
+  font-size: 35px;
+  padding-right: 20%;
+  color:white;
+}
+.hero-section p{
+  font-family: var(--font-family2);
+  font-weight: 600;
+  margin: 5% 0;
+  padding-right:40%;
+   color:var(--VeryDarkBlue);
+}
+.left input{
+  padding: 2% 3%;
+  border: 1px solid #dddd;
+  border-radius: 2px;
+}
+
+@keyframes button {
+  0%{
+    background-color: black;
+  }
+  100%{
+    background-color: white;
+    color: black;
+  }
+}
+.button{
+  animation: button 4s ease infinite alternate ;
+  background-color:black;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 2% 3%;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.button:hover{
+  background-color: var(--ModerateCyan);
+  cursor: pointer;
+}
+input::placeholder{
+  font-size: 15px;
+}
+
+/* Seceond Section */
+.hero-two{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20% 4%;
+  /* background: url(bg-curve-desktop.svg);
+  background-size: cover; */
+  
+}
+.hero-two .left{
+  flex-basis: 60%;
+}
+.hero-two .right{
+  flex-basis: 40%;
+}
+.hero-two .right img{
+ width: 100%;
+}
+
+.hero-two .left h2{
+  line-height: 1.4em;
+  font-size: 35px;
+  padding-right: 20%;
+  color:white;
+}
+
+.hero-two .left p{
+  font-family: var(--font-family2);
+  font-weight: 600;
+  margin: 2% 0;
+  padding-right:40%;
+  color:white;
+}
+.hero-two .left a{
+  color: yellow;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.hero-two .left img{
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
+
+@keyframes run {
+  0%{
+    background-color: blueviolet;
+    transform: translateX(30px);
+  }
+  100%{
+    background-color: black;
+  }
+
+}
+.box{
+  animation: run 2s ease infinite alternate;
+  margin-top: 30px;
+  padding: 5% 3%;
+  width: 45%;
+  box-shadow:0px 0px 08px 04px white ;
+  border-radius: 8px;
+}
+.box:hover{
+box-shadow:5px 5px 02px 02px white;
+}
+.box div {
+  display: flex;
+  align-items: center;
+}
+.icon-quotes{
+  margin-bottom: 10px;
+}
+.box div img{
+  width: 50%;
+  border-radius: 50%;
+}
+.box h4{
+  color: white;
+}
+.box div div {
+  margin-top: 10px;
+  display: inline-block;
+}
+.name{
+  position: relative;
+  right: 12%;
+  color: white;
+}
+
+/* hero-3 */
+
+.hero-3{
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-3 .left{
+ flex-basis: 60%;
+ padding: 0 4%;
+ 
+}
+.hero-3 .right{
+ flex-basis: 40%;
+}
+.hero-3 h2,p{
+  font-family: var(--font-family2);
+  font-weight: 600;
+  margin: 2% 0;
+  padding-right:40%;
+   color:white;
+}
+.hero-3 .right input{
+  display: block;
+  padding: 2% 3%;
+  width: 80%;
+  border: 1px solid #dddd;
+  border-radius: 2px;
+}
+.hero-3 input::placeholder{
+  font-size: 15px;
+}
+.hero-3 .button{
+  background-color: var(--BrightBlue);
+  text-decoration: none;
+  color: aliceblue;
+  padding: 2% 3%;
+  border-radius: 3px;
+  margin: 0px;
+}
+.hero-3 .button:hover{
+  background-color: var(--ModerateCyan);
+}
+
+/* footer */
+
+.footer{
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 4%;
+  border-top: 2px solid white;
+  
+}
+.ff{
+  flex-basis: 25%;
+}
+.contact img{
+  width: 100%;
+  margin-top: 10px;
+}
+.contact{
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+.contact img{
+  display: block;
+}
+.contact h6{
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.contact h6:hover{
+  color: black;
+}
+
+.two a{
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+.two a:hover{
+  color: black;
+}
+
+.three a{
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+.three a:hover{
+  color: black;
+}
+.four a{
+  margin-top: 10px;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+i:hover{
+  color: black;
+}
+footer{
+  padding: 2% 0%;
+  background-color: black;
+  text-align: center;
+}
+footer a{
+  animation: munna 3s ease-in-out infinite alternate;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+@keyframes munna {
+  0%{
+    color: white;
+  }
+  50%{
+    color: blueviolet;
+  }
+  100%{
+    color: crimson;
+  }
+}
+
+
